@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-path = "C:\Information_Science\My_projects\ML_Datasets\TurkeyDevastatingEarthquakes.csv"
+path = "TurkeyDevastatingEarthquakes.csv"
 Earthquakes_Turkey = pd.read_csv(path,encoding='ISO-8859-1', sep=';')
 print(Earthquakes_Turkey['Location'])
 Earthquakes_Turkey.drop(columns="Time",axis=1,inplace=True)
